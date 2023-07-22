@@ -43,8 +43,8 @@ var server = http.createServer(function(request, response){
     response.end()
   }else if(path === '/y'){
     response.statusCode = 200
-    response.setHeader('Content-Type', 'text/js;charset=utf-8')
-    response.write(`这里是js内容`)
+    response.setHeader('Content-Type', 'text/javascript;charset=utf-8')
+    response.write(`这里是js内容,上面的text/jacascript不可以缩写`)
     response.end()
   }
   
